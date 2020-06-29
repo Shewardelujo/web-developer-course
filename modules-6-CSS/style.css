@@ -1,0 +1,73 @@
+/* Selector {
+    Property: value;
+} */
+/* * {
+    symbolizes all elements
+} */
+
+* {
+  text-align: right;
+}
+body {
+  background-image: url(bubble.jpg);
+  background-size: cover;
+}
+h2,
+p {
+  color: #aa3939;
+  text-align: center;
+  border: 5px solid rgb(255, 170, 170);
+  cursor: pointer;
+  /* rgb could be rgba, with a for opacity ranging from 0 to 1 */
+}
+/* :hover
+    :last-child
+    :first-child  */
+/* h2, p {
+    means select all p's and h2
+} */
+/* h2 p {
+    means select all p's inside h2
+} */
+/* h2 > p {
+    means select all p's that have direct parent of h2
+} */
+/* h2 + p { 
+    means select the p element that is exactly after an h2 element
+} */
+
+p {
+  color: green;
+  /* text-decoration: underline; */
+  /* text-transform: uppercase; */
+  line-height: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 90%;
+  font-family: "font-family: 'Kaushan Script', cursive;";
+}
+img {
+  float: right;
+  /* float was created to have properties float either left or right and have text floats around it */
+}
+footer {
+  clear: both;
+  /* this is usually used immediately after a float */
+  text-align: center;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+.webtext {
+  border: 2px dashed green;
+}
+.active {
+  color: red;
+}
+#div1 {
+  background: rgba(0, 0, 255, 0.2);
+}
+#div2 {
+  background: rgba(255, 0, 0, 0.2);
+}
