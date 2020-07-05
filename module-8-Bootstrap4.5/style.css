@@ -1,0 +1,12 @@
+.btn-danger {
+  background-color: orange;
+}
+.btn-danger:hover {
+  background-color: peachpuff;
+  color: red;
+}
+.col {
+  background-color: rgb(219, 211, 211);
+  border: 2px solid black;
+  /* margin: px; */
+}
