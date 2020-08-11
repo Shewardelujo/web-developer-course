@@ -1,0 +1,48 @@
+DOM Selectors
+--------------
+1)getElementsByTagName
+2)getElementsByClassName
+3)getElementById
+
+The following 2 are recommended over the first 3 because they work with any css selector (e.g; h1, li, .class, #id e.t.c.,)
+though you would still encounter the first three once in a while in every code base
+
+4)querySelector
+5)querySelectorAll
+
+6)getAttribute,  you have to select an element to get it's attribute, so it is dependent on 1-5 above [e.g; document.querySelector("li").getAttribute("random");]
+7)setAttribute,  e.g; document.querySelector("li").setAttribute("random", "1000");
+
+##Changing Styles
+8)style.{property} //ok   e.g; document.querySelector("li").style.backgroundColor = "Yellow"; the reason why it is just ok is because it is like declaring a style inside html and we don't that, we want html to focus on html, css focus on css and javascript on javascript, hence the next 2 is best
+
+9)className //best
+E.g;
+var h1 = document.querySelector("h1");
+h1.className = "coolTitle";
+
+10)classList //best
+e.g;
+document.querySelector("li").classList;
+
+10a)classList.add
+e.g;
+document.querySelector("li").classList.add("coolTitle");
+10b)classList.remove
+e.g; 
+document.querySelector("li").classList.remove("coolTitle");
+10c)classList.toggle
+document.querySelector("li").classList.toggle("done");
+
+##Bonus
+11)innerHTML //DANGEROUS
+e.g;
+document.querySelector("h1").innerHTML = "<strong>Birthday List</strong>";
+
+12)parentElement
+e.g;
+document.querySelectorAll("li")[1].parentElement;
+
+13)children
+
+14)##It is important to CACHE selectors in variables
