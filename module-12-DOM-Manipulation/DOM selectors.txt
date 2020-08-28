@@ -24,7 +24,7 @@ h1.className = "coolTitle";
 10)classList //best
 e.g;
 document.querySelector("li").classList;
-
+yr434r
 10a)classList.add
 e.g;
 document.querySelector("li").classList.add("coolTitle");
